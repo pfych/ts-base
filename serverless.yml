@@ -1,0 +1,15 @@
+service: ts-base
+provider:
+  name: aws
+  runtime: nodejs12.x
+custom:
+  functionsBasePath: src/api
+plugins:
+  - serverless-functions-base-path
+  - serverless-plugin-typescript
+  - serverless-offline
+functions:
+  ping:
+    handler: handler.ping
+    events:
+      - http: GET ping
