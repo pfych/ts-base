@@ -10,6 +10,6 @@ plugins:
   - serverless-offline
 functions:
   ping:
-    handler: handler.ping
+    handler: ping/ping.pong
     events:
       - http: GET ping

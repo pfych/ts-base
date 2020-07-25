@@ -1,7 +1,7 @@
 import { Segment } from 'aws-xray-sdk-core';
 import { APIGatewayEvent, Context } from 'aws-lambda';
 
-const pong = async (
+export const pong = async (
   event: APIGatewayEvent,
   context: Context,
 ): Promise<void> => {
@@ -15,5 +15,3 @@ const pong = async (
     segment.close();
   }
 };
-
-export default pong;
