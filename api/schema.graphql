@@ -1,0 +1,8 @@
+type TimeResponse {
+  time: String
+}
+
+type Query {
+  time: TimeResponse
+}
+
